@@ -1,11 +1,12 @@
 
 const btn=document.querySelector(".btn");
-// const deleteApi=document.querySelector(".delete");
+const deleteApi=document.querySelector(".delete");
+const result=document.getElementById('result');
 const weather=()=>{
 
     
     const inputText=document.getElementById('search');
-    const result=document.getElementById('result');
+
     let valueInput;
   
     inputText.addEventListener("input", async (e)=>{
@@ -46,3 +47,6 @@ const weather=()=>{
 // weather();
 btn.addEventListener("click", weather);
 
+deleteApi.addEventListener("click", ()=>{
+    result.innerHTML = "";
+})
