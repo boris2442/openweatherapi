@@ -47,7 +47,7 @@ h1{
     height: 500px;
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding: 30px;
 }
 .styledata{
     background-color: blue;
