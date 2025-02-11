@@ -45,7 +45,7 @@ const weather=()=>{
 // weather();
 btn.addEventListener("click", weather);
 
-deleteApi.addEventListener("click", ()=>{
-    // result.innerHTML = "";
-    valueInput.innerHTML = "";
-})
+// deleteApi.addEventListener("click", ()=>{
+//     // result.innerHTML = "";
+//     valueInput.innerHTML = "";
+// })
