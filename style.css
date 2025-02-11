@@ -14,18 +14,23 @@ h1{
 }
 .container{
     border: 2px solid blue;
-    display: inline-block;
-    margin-left: 30px;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+    margin: 0 auto;
+    /* margin-left: 20px; */
+      max-width: 700px;
     padding: 30px;
-    /* width: 400px; */
+    gap:10px;
     border-radius: 50px;
 }
-#search, .btn{
+#search, .btn, .delete{
     padding: 8px 15px;
-    /* margin-left: 20px; */
+    width: 200px;
+ 
 }
-.btn{
+.btn, .delete{
     cursor: pointer;
     background-color: blue;
     color:#fff;
@@ -40,6 +45,8 @@ h1{
 #result{
     padding-top: 30px;
     height: 500px;
+    display: flex;
+    flex-direction: column;
     padding-left: 30px;
 }
 .styledata{
@@ -55,4 +62,7 @@ h1{
     max-height: 550px;
     gap:20px;
  
+}
+span{
+    font-weight: bold;
 }
