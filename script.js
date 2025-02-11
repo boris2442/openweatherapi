@@ -1,6 +1,6 @@
 
 const btn=document.querySelector(".btn");
-
+// const deleteApi=document.querySelector(".delete");
 const weather=()=>{
 
     
@@ -45,3 +45,4 @@ const weather=()=>{
 
 // weather();
 btn.addEventListener("click", weather);
+
