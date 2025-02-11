@@ -1,0 +1,39 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+}
+.container{
+    border: 2px solid blue;
+    display: inline-block;
+    margin-left: 30px;
+    /* display: flex; */
+    padding: 30px;
+    /* width: 400px; */
+    border-radius: 50px;
+}
+#search, .btn{
+    padding: 8px 15px;
+    /* margin-left: 20px; */
+}
+.btn{
+    cursor: pointer;
+    background-color: blue;
+    color:#fff;
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+    
+}
+.btn:hover{
+    background-color: #333;
+}
