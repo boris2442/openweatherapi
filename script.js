@@ -11,9 +11,7 @@ const weather=()=>{
   
     inputText.addEventListener("input", async (e)=>{
         valueInput=e.target.value.trim();
-         if(valueInput===""){
-            alert("veuillez entrer un Pays valide");
-         }
+      
        const apikey="3c0577d377eb01f8c06549f97b3c534e";
         const url=`https://api.openweathermap.org/data/2.5/weather?q=${valueInput}&appid=${apikey}&units=metric`;
 
@@ -48,5 +46,6 @@ const weather=()=>{
 btn.addEventListener("click", weather);
 
 deleteApi.addEventListener("click", ()=>{
-    result.innerHTML = "";
+    // result.innerHTML = "";
+    valueInput.innerHTML = "";
 })
