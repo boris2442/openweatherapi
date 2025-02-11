@@ -42,28 +42,36 @@
 //   .then(data => console.log(data))
 //   .catch(error => console.error("Erreur :", error));
 const btn=document.querySelector(".btn");
+// btn.addEventListener('click',weather)
 const weather=()=>{
 
     
     const inputText=document.getElementById('search');
     const result=document.getElementById('result');
     let valueInput;
-
-    inputText.addEventListener("input", (e)=>{
+    // let data;
+    inputText.addEventListener("input", async (e)=>{
         valueInput=e.target.value.trim();
-        console.log(valueInput);
+        // console.log(valueInput);
         // if(valueInput===""){
         //     alert("veuillez entrer un pays")
         // }
+       
        const apikey="3c0577d377eb01f8c06549f97b3c534e";
         const url=`https://api.openweathermap.org/data/2.5/weather?q=${valueInput}&appid=${apikey}&units=metric`;
-        fetch(url).then(response => response.json())
-        .then((data)=>console.log(data));
+
+    //   await  fetch(url).then(response => await response.json())
+    //     .then(data=>console.log(data));
+     const response=await fetch(url);
+     const data=await response.json();
+
+
        const div=document.createElement('div');
        result.appendChild(div);
        div.classList.add('styledata')
        div.innerHTML=`
        <h2>${data.name}, ${data.sys.country}</h2>
+       <h2>coordonnees: ${data.coord.long}</h2>
        
        
        
@@ -74,5 +82,5 @@ const weather=()=>{
 
 }
 
-// btn.addEventListener('click',weather)
+
 weather();
