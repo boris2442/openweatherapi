@@ -41,13 +41,18 @@ h1{
     padding-top: 30px;
     height: 500px;
     padding-left: 30px;
-    background-color: red;
 }
 .styledata{
+    background-color: blue;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    max-width: 450px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     margin-bottom: 20px;
+    color:#fff;
+    padding: 50px;
+    max-height: 550px;
     gap:20px;
-    background: blue;
+ 
 }

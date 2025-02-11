@@ -76,9 +76,11 @@ const weather=()=>{
 
        <p>Météo: ${data.weather[0].description}</p>
        <p>Visibility:${data.visibility}m</p>
-       <p>🌅Levée du soleil:${data.sys.sunrise}</p>
-       <p>🌇Couchée du soleil:${data.sys.sunset}</p>
+       <p>🌅Levée du soleil:${convertSunrise}</p>
+       <p>🌇Couchée du soleil:${convertSunset}</p>
        `
+    //    <p>🌇Couchée du soleil:${data.sys.sunset}</p>
+    //    <p>🌅Levée du soleil:${data.sys.sunrise}</p>
     
     })
    
