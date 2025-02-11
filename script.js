@@ -56,11 +56,12 @@ const weather=()=>{
        const apikey="3c0577d377eb01f8c06549f97b3c534e";
         const url=`https://api.openweathermap.org/data/2.5/weather?q=${valueInput}&appid=${apikey}&units=metric`;
 
-
+        
      const response=await fetch(url);
      const data=await response.json();
 
-
+      let convertSunrise=new Date((data.sys.sunrise)).toLocaleTimeString();
+      let convertSunset=new Date((data.sys.sunset)).toLocaleTimeString();
        const div=document.createElement('div');
        result.appendChild(div);
        div.classList.add('styledata')
@@ -75,8 +76,8 @@ const weather=()=>{
 
        <p>Météo: ${data.weather[0].description}</p>
        <p>Visibility:${data.visibility}m</p>
-       <p>Levée du soleil:${data.sys.sunrise}</p>
-       <p>Couchée du soleil:${data.sys.sunset}</p>
+       <p>🌅Levée du soleil:${data.sys.sunrise}</p>
+       <p>🌇Couchée du soleil:${data.sys.sunset}</p>
        `
     
     })
