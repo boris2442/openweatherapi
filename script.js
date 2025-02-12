@@ -48,10 +48,10 @@ const weather=()=>{
 }
 
 // weather();
-// btn.addEventListener("click", weather()).then((resp) => console.log("bonjour"));
+
 btn.addEventListener("click",()=>{
    weather();
-    console.log("bonjour")
+    console.log("api generer");
 })
 // deleteApi.addEventListener("click", ()=>{
 //     // result.innerHTML = "";
