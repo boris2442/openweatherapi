@@ -5,6 +5,8 @@ window.onload = function () {
 const btn=document.querySelector(".btn");
 const deleteApi=document.querySelector(".delete");
 const result=document.getElementById('result');
+
+
 const weather=()=>{
 
     
@@ -45,9 +47,12 @@ const weather=()=>{
 
 }
 
-weather();
-// btn.addEventListener("click", weather);
-
+// weather();
+// btn.addEventListener("click", weather()).then((resp) => console.log("bonjour"));
+btn.addEventListener("click",()=>{
+   weather();
+    console.log("bonjour")
+})
 // deleteApi.addEventListener("click", ()=>{
 //     // result.innerHTML = "";
 //     valueInput.innerHTML = "";
